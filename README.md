@@ -40,14 +40,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina van Sonnyangels  
-  <img src="/readme-images/homepagina1.png" width="375px" alt="De homepagina als je voor het eerst op de website komt">
+  <img src="/readme-images/homepagina1.png" width="375px" alt="De homepagina als je voor het eerst op de website komt.">
+
+  <img src="/readme-images/phoneview-home1.png" width="375px" alt="De homepagina als je voor het eerst op de website komt op een kleine scherm.">
 
   <img src="/readme-images/homepagina2.png" width="375px" alt="De homepagina als je naar beneden scrollt.">
+
+  <img src="/readme-images/phoneview-home2.png" width="375px" alt="De homepagina als je naar beneden scrollt op een kleine scherm.">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Producten pagina van Sonnyangels  
   <img src="/readme-images/productpagina.png" width="375px" alt="Pagina waar je hun verkochten prodcuten kan zien.">
+  
+  <img src="/readme-images/phoneview-product.png" width="375px" alt="Pagina waar je hun verkochten prodcuten kan zien op een kleine scherm.">
+
  
 </details>
 
