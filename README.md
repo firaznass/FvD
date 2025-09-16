@@ -40,20 +40,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepagina van Sonnyangels  
-  <img src="/readme-images/homepagina1.png" width="375px" alt="De homepagina als je voor het eerst op de website komt.">
-
   <img src="/readme-images/phoneview-home1.png" width="375px" alt="De homepagina als je voor het eerst op de website komt op een kleine scherm.">
-
-  <img src="/readme-images/homepagina2.png" width="375px" alt="De homepagina als je naar beneden scrollt.">
 
   <img src="/readme-images/phoneview-home2.png" width="375px" alt="De homepagina als je naar beneden scrollt op een kleine scherm.">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Producten pagina van Sonnyangels  
-  <img src="/readme-images/productpagina.png" width="375px" alt="Pagina waar je hun verkochten prodcuten kan zien.">
+  Detailpagina van product  
+  <img src="/readme-images/detailpagina1.png" width="375px" alt="Detailpagina van product: Smiski.">
   
-  <img src="/readme-images/phoneview-product.png" width="375px" alt="Pagina waar je hun verkochten prodcuten kan zien op een kleine scherm.">
+  <img src="/readme-images/detailpagina2.png" width="375px" alt="Detailpagina van product: Smiski">
 
  
 </details>
@@ -67,6 +63,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+
+  Wat goed ging:
+  -Als je door de navigatiebar gaat met de screenreader vertelt het of je die link al heb bezoekt
+  -Het zegt op welke link je bent 
+  -Zegt op hoeveelste link je bent (e.g link 4 van 6)
+  -Screenreader vertelt of je het einde van de navigatiebar heb bereikt
+  -Form aan het einde van de homepagina wordt correct gelezen door de screenreader
+  -Footer links zijn duidelijk
+  -Taal en profiel menu zijn dropdown buttons
+
+  Wat fout ging:
+  -De zoek button wordt als 'button' vertelt, wat zijn functie niet duidelijk vertaalt
+  -Headings zijn niet in volgorde. Er is op de homepagina geen h1 en het jumpt van h2 naar h4 
+  -De shoppingcart in de header wordt niet vertaalt naar shopping cart, maar de hoeveelheid spullen in de cart wordt wel vertelt
+  -De plaatjes die linken naar een andere pagina is niet goed vertaalt
+  -De taal en profiel buttons worden vertaalt naar 'button' em is dus niet duidelijk in zijn functie
+  -De button die hide in de plaatjes van de carousel wordt niet duidelijk vertaalt
+  -De andere twee buttons die hide in de plaatjes van de carousel wordt ook niet duidelijk vertaalt en die zijn links
+  -Sommige links zijn onduidelijk en hebben geen vertaling
+  -De headings in de detailpagina zijn niet op volgorde
+  -De form controls in de detailpagina zijn ook niet duidelijk en hebben geen namen
 
 </details>
 
