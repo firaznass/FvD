@@ -128,7 +128,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | Ik weet niet zo goed hoe je een carousel moet maken voor plaatjes, dus hoe moet dit?| en dit             | en ik dit    | en dan ik dat    |
   | In de product viewer met images, hoe kan ik ervoor zorgen dat het grote plaatje verandert als ik op de kleine klik?               | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Images overlappen               | ...                | ...          | ...              |
+  | Welke element ik moet gebruiken ipv div op detailpagina               | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
