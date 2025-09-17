@@ -94,14 +94,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### de hele homepagina: 
+  <img src="/readme-images/Homepagina-breakdownschets.jpg" width="375px" alt="breakdown van de hele homepagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### de hele detailpagina: 
+  <img src="/readme-images/Detailpagina-breakdownschets.jpg" width="375px" alt="breakdown van de hele detailpagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Hamburger menu: 
+  <img src="/readme-images/Hamburgermenu-breakdownschets.jpg" width="375px" alt="breakdown van hamburger menu">
+
+  ### Product card: 
+  <img src="/readme-images/Productcard-breakdownschets.jpg" width="375px" alt="breakdown van product card">
 
 </details>
 
