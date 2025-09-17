@@ -126,8 +126,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Zhafira        | Safae              | Robin        | Maaike           |
   | ---            | ---                | ---          | ---              |
-  | Hoe moet je een| en dit             | en ik dit    | en dan ik dat    |
-  | Carousel maken | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Hoe moet je een carousel maken?| en dit             | en ik dit    | en dan ik dat    |
+  |                | dit als er tijd is | nog een punt | dit wil ik zeker |
   |                | ...                | ...          | ...              |
 
 
