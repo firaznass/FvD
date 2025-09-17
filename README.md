@@ -126,9 +126,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Zhafira        | Safae              | Robin        | Maaike           |
   | ---            | ---                | ---          | ---              |
-  | Hoe moet je een carousel maken?| en dit             | en ik dit    | en dan ik dat    |
-  |                | dit als er tijd is | nog een punt | dit wil ik zeker |
-  |                | ...                | ...          | ...              |
+  | Ik weet niet zo goed hoe je een carousel moet maken voor plaatjes, dus hoe moet dit?| en dit             | en ik dit    | en dan ik dat    |
+  | In de product viewer met images, hoe kan ik ervoor zorgen dat het grote plaatje verandert als ik op de kleine klik?               | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Images overlappen               | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
