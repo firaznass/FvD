@@ -1,0 +1,13 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	--color-text: #6f6f6f;
+	--color-header: #2e2e2e;
+	--color-background: #ffffff;
+	--second-color-background: white; 
+	--color-accent: #f3a5aa;
+	--second-color-accent: #f7cdcf;
+}
+

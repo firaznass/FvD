@@ -1,0 +1,83 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+	--color-text: #6f6f6f;
+	--color-header: #2e2e2e;
+	--color-background: #ffffff;
+	--second-color-background: white; 
+	--color-accent: #f3a5aa;
+	--second-color-accent: #f7cdcf;
+}
+
+body{
+	margin: 0;
+}
+
+main section{
+	padding: 1em;
+}
+
+h2{
+	font-family: "Sonny";
+	font-weight: 100;
+}
+
+p, a{
+	font-family: "Sonny";
+}
+
+/* Section 1 */
+main section:nth-child(1){
+    background-color: var(--second-color-accent);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: var(--color-background);
+
+	height: 40em;
+}
+
+main section:nth-child(1) h1 img{
+	width: 9em;
+	height: auto;
+}
+
+main section:nth-child(1) p{
+	font-weight: 500;
+	font-size: .9em;
+	text-align: center;
+	line-height: 1.5em;
+
+	margin-top: 3em;
+	margin-bottom: 2em;
+
+	width: 20em;
+}
+
+main section:nth-child(1) a{
+	color: var(--color-background);
+	text-transform: uppercase;
+	font-size: .8em;
+
+	border: solid;
+	padding: .5em;
+
+	width: fit-content;
+}
+
+
+/* Section 2 */
+main section:nth-child(2) a img{
+	width: 100%;
+	height: auto;
+
+	margin-top: 1em;
+}
+
+/* Section 3 */
+

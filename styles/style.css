@@ -7,16 +7,24 @@
 
 
 
+/* Fonts */
 
-
+@font-face {
+	font-family: "Sonny";
+	src: url(/fonts/Sonny.woff2);
+}
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #6f6f6f;
+	--color-header: #2e2e2e;
+	--color-background: #ffffff;
+	--second-color-background: white; 
+	--color-accent: #f3a5aa;
+	--second-color-accent: #f7cdcf;
 }
 
 
@@ -27,5 +35,40 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+/* hamburger menu van codepen 2-buttons opdracht */
 
+nav{
+	background-color: var(--color-background);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	translate: -100% 0%;
+
+	transition: 0.3s;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	position: sticky;
+	top: 0;
+}
+
+header > button{
+	order: -1;
+}
+
+nav.ToonMenu{
+	translate: 0% 0%;
+}
+
+
+/* tekst */
+p{
+	font-family: "Sonny", Arial, Helvetica, sans-serif;
+}

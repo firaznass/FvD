@@ -65,25 +65,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   Wat goed ging:
-  -Als je door de navigatiebar gaat met de screenreader vertelt het of je die link al heb bezoekt
-  -Het zegt op welke link je bent 
-  -Zegt op hoeveelste link je bent (e.g link 4 van 6)
-  -Screenreader vertelt of je het einde van de navigatiebar heb bereikt
-  -Form aan het einde van de homepagina wordt correct gelezen door de screenreader
-  -Footer links zijn duidelijk
-  -Taal en profiel menu zijn dropdown buttons
+  - Als je door de navigatiebar gaat met de screenreader vertelt het of je die link al heb bezoekt
+  - Het zegt op welke link je bent 
+  - Zegt op hoeveelste link je bent (e.g link 4 van 6)
+  - Screenreader vertelt of je het einde van de navigatiebar heb bereikt
+  - Form aan het einde van de homepagina wordt correct gelezen door de screenreader
+  - Footer links zijn duidelijk
+  - Taal en profiel menu zijn dropdown buttons
 
   Wat fout ging:
-  -De zoek button wordt als 'button' vertelt, wat zijn functie niet duidelijk vertaalt
-  -Headings zijn niet in volgorde. Er is op de homepagina geen h1 en het jumpt van h2 naar h4 
-  -De shoppingcart in de header wordt niet vertaalt naar shopping cart, maar de hoeveelheid spullen in de cart wordt wel vertelt
-  -De plaatjes die linken naar een andere pagina is niet goed vertaalt
-  -De taal en profiel buttons worden vertaalt naar 'button' em is dus niet duidelijk in zijn functie
-  -De button die hide in de plaatjes van de carousel wordt niet duidelijk vertaalt
-  -De andere twee buttons die hide in de plaatjes van de carousel wordt ook niet duidelijk vertaalt en die zijn links
-  -Sommige links zijn onduidelijk en hebben geen vertaling
-  -De headings in de detailpagina zijn niet op volgorde
-  -De form controls in de detailpagina zijn ook niet duidelijk en hebben geen namen
+  - De zoek button wordt als 'button' vertelt, wat zijn functie niet duidelijk vertaalt
+  - Headings zijn niet in volgorde. Er is op de homepagina geen h1 en het jumpt van h2 naar h4 
+  - De shoppingcart in de header wordt niet vertaalt naar shopping cart, maar de hoeveelheid spullen in de cart wordt wel vertelt
+  - De plaatjes die linken naar een andere pagina is niet goed vertaalt
+  - De taal en profiel buttons worden vertaalt naar 'button' em is dus niet duidelijk in zijn functie
+  - De button die hide in de plaatjes van de carousel wordt niet duidelijk vertaalt
+  - De andere twee buttons die hide in de plaatjes van de carousel wordt ook niet duidelijk vertaalt en die zijn links
+  - Sommige links zijn onduidelijk en hebben geen vertaling
+  <img src="/readme-images/linksmenu.png" width="375px" alt="Links menu">
+  - De headings in de detailpagina zijn niet op volgorde
+  <img src="/readme-images/headings.png" width="375px" alt="Headings menu op detailpagina">
+  - De form controls in de detailpagina zijn ook niet duidelijk en hebben geen namen
+  <img src="/readme-images/formcontrols.png" width="375px" alt="Form controls menu">
+
 
 </details>
 
@@ -119,25 +123,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - html schrijven voor allebei de pagina's
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Zhafira        | Safae              | Robin        | Maaike           |
-  | ---            | ---                | ---          | ---              |
-  | Ik weet niet zo goed hoe je een carousel moet maken voor plaatjes, dus hoe moet dit?| en dit             | en ik dit    | en dan ik dat    |
-  | In de product viewer met images, hoe kan ik ervoor zorgen dat het grote plaatje verandert als ik op de kleine klik?               | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Paar vragen over website structuur               | ...                | ...          | ...              |
+  | Zhafira        | Safae              | Robin        | Maaike           | Xar        |
+  | ---            | ---                | ---          | ---              | ---        |
+  | Carousel       | website structuur  | nav en html  | html structuur   |            |
+  | Product viewer |                    |              | 2 stylesheets    |            |
+  | html structuur |                    |              |                  |            |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - svg gebruiken: met svg tag, niet img
+  - prettier (extension) om code netjes te maken
+  - id op body van de tweede pagina
+  - figure is ALLEEN om images in te boxen
+  - div bij detailpagina -> doorvragen aan Sanne
+  - label kan voor een ul zijn
+  - svg van de website halen met inspector
+  - logo buiten de nav
 
 </details>
 
@@ -157,11 +166,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Zhafira        | Safae              | Robin        | Maaike           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | auto carousel  | classes            | .            | flexbox          |
+  |                | sections           |              | css indelingen   |
+  |                | articles en code   |              |                  |
 
 
   ### Verslag van meeting
@@ -170,7 +179,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - punt 1
   - punt 2
   - nog een punt
-- ...
+  - ...
 
 </details>
 
