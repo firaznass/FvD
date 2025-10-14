@@ -3,7 +3,7 @@ console.log("hi");
 
 
 /* hamburger menu van codepen 2-buttons opdracht */
-var openButton = document.querySelector("header > button");
+var openButton = document.querySelector("header nav button");
 
 openButton.onclick = openMenu;
 

@@ -80,4 +80,153 @@ main section:nth-child(2) a img{
 }
 
 /* Section 3 */
+main section:nth-child(3) a{
+	text-decoration: none;
+}
 
+main section:nth-child(3) h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.7em;
+
+	color: var(--color-header);
+}
+
+main section:nth-child(3) ul:first-of-type{
+	list-style: none;
+	padding: 0;
+
+	justify-self: center;
+	
+	line-height: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+main section:nth-child(3) ul:first-of-type li a{
+	color: var(--color-text);
+}
+
+
+
+/* carousel code van Sanne*/
+main section:nth-child(3) ul:last-child{
+	margin:0;
+	padding:0;
+	list-style-type:"";
+	
+	display:flex;
+	gap:2em;
+	overflow:auto;
+	
+	padding:2em;
+	
+	scroll-snap-type:x mandatory;
+	
+	scroll-behavior:smooth;
+	
+	overscroll-behavior-x:contain;
+	
+	anchor-name: --carousel;
+
+
+	&::scroll-button(*) {
+    position: fixed;
+		
+    position-anchor: --carousel;
+		
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+     position-area: bottom center;
+		justify-self:end;
+    content: 'arrow_forward >' / 'Next';
+
+	/* eigen toegevoegde code */
+	background-color: var(--color-background);
+	border-radius: 10em;
+	border-color: var(--color-accent);
+	border-style: solid;
+  }
+
+  &::scroll-button(left) {
+    position-area: bottom center;
+		justify-self:start;
+    content: '< arrow_back' / 'Previous';
+
+	/* eigen toegevoegde code */
+	background-color: var(--color-background);
+	border-radius: 10em;
+	border-color: var(--color-accent);
+	border-style: solid;
+  }
+}
+
+main section:nth-child(3) ul:last-child li{
+	/* flex-basis:16em; */
+	aspect-ratio:1/1;
+	
+	flex-shrink:0;
+	
+	scroll-snap-align:center;
+}
+
+
+/* eigen code begint weer hier */
+main section:nth-child(3) ul:last-child li a{
+	display: grid;
+	justify-content: center;
+}
+
+main section:nth-child(3) ul:last-child li a h3{
+	text-align: center;
+	font-size: 0.7em;
+
+	color: var(--color-text);
+}
+
+main section:nth-child(3) ul:last-child li a img{
+	width: 11em;
+	height: auto;
+	order: -1;
+}
+
+main section:nth-child(3) ul:last-child li a p{
+	color: black;
+	font-size: 0.9em;
+
+	justify-self: center;
+}
+
+main section:nth-child(3) ul:last-child li > p{
+	background-color: var(--color-background);
+
+	width: fit-content;
+	padding: 0.7em;
+
+	justify-self: end;
+}
+
+/* Section 4 */
+main section:nth-child(4){
+	background-image: url("../images/partnerstore.png");
+	background-size: contain;
+	height: 100dvh;
+}
+
+/* Section 5 */
+main section:nth-child(5) h2{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+main section:nth-child(5) form{
+	display: grid;
+}
+
+main section:nth-child(5) form label input{
+	width: max-content;
+}

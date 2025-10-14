@@ -168,7 +168,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Zhafira        | Safae              | Robin        | Maaike           |
   | ---            | ---                | ---          | ---              |
-  | auto carousel  | classes            | .            | flexbox          |
+  | auto carousel  | classes            | svg styling  | flexbox          |
   |                | sections           |              | css indelingen   |
   |                | articles en code   |              |                  |
 
@@ -176,10 +176,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - svg met width vergroten/verkleinen
+  - font en kleuren kan in aparte stylesheets
+  - carousel + anchor + nieuwe tools
+  - list-style:none en dan ook padding weghalen
+  - scroll driven animations
 
 </details>
 
