@@ -214,20 +214,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Zhafira        | Safae              | Robing       | Maaike           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | background img | background image   | svg          | header position  |
+  | positionering  | input fields       |              | inlog formulier  |
+  |                | buttons            |              |                  |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - aria-hidden="true" om niet door screenreader gelezen te worden
+  - item in carousel width: 100vw 
+  - grid gebruiken voor de producten in carousel 
+  - niet alles in 'a' alleen de p -> p veranderen in a -> beter voor toegankelijkheid met screenreader
+  - 1 laag van navigatie
+  - display flex mag niet op een 'p' -> dat doet niks
+  - max width op tekst
+  - oefen functie op mac in screen reader
+  - instellingen -> voiceover -> open self study / tutorial
 
 </details>
 

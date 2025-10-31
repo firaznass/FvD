@@ -70,6 +70,22 @@ main section:nth-child(1) a{
 	width: fit-content;
 }
 
+main section:nth-child(1) a:first-of-type{
+	margin-bottom: 5em;
+
+	text-decoration: none;
+	font-size: 0.6em;
+	padding: 1em;
+}
+
+main section:nth-child(1) a:last-child{
+	border-radius: 50%;
+}
+
+main section:nth-child(1) a:last-child svg{
+	fill: white;
+}
+
 
 /* Section 2 */
 main section:nth-child(2) a img{
@@ -141,9 +157,9 @@ main section:nth-child(3) ul:last-child{
   }
 
   &::scroll-button(right) {
-     position-area: bottom center;
+     position-area: inline-end center;
 		justify-self:end;
-    content: 'arrow_forward >' / 'Next';
+    content: '›' / 'Next';
 
 	/* eigen toegevoegde code */
 	background-color: var(--color-background);
@@ -153,9 +169,9 @@ main section:nth-child(3) ul:last-child{
   }
 
   &::scroll-button(left) {
-    position-area: bottom center;
+    position-area: inline-start center;
 		justify-self:start;
-    content: '< arrow_back' / 'Previous';
+    content: '‹' / 'Previous';
 
 	/* eigen toegevoegde code */
 	background-color: var(--color-background);
@@ -208,25 +224,78 @@ main section:nth-child(3) ul:last-child li > p{
 	padding: 0.7em;
 
 	justify-self: end;
+
+	border-style: solid;
+	border-color: #6f6f6f;
 }
 
 /* Section 4 */
 main section:nth-child(4){
-	background-image: url("../images/partnerstore.png");
-	background-size: contain;
-	height: 100dvh;
+
+	/* met chatgpt prompt: hoe zet ik een zwarte transparante overlay op een background image */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	url("../images/partnerstore.png");
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 90vh;
+	margin: 1em;
+}
+
+main section:nth-child(4) h2{
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main section:nth-child(4) a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--color-background);
+	border-style: solid;
+	padding: 1em;
 }
 
 /* Section 5 */
 main section:nth-child(5) h2{
 	text-align: center;
 	font-size: 1.5em;
+
+	letter-spacing: normal;
 }
 
 main section:nth-child(5) form{
-	display: grid;
+	display: flex;
+	flex-direction: column;
 }
 
-main section:nth-child(5) form label input{
+main section:nth-child(5) form label{
+	display: flex;
+	flex-direction: column;
+
+	font-size: 0; /* label tekst verbergen */
+}
+
+main section:nth-child(5) form label input[type="text"], input[type="email"]{
+	padding: 1em;
+	
+	border-style: solid;
+	border-color: var(--color-text);
+	border-width: 0.1em;
+}
+
+
+main section:nth-child(5) form label input[type="submit"]{
+	background-color: var(--color-accent);
+	padding: 1em;
+	margin-top: 3em;
 	width: max-content;
+
+	border: none;
+	color: var(--color-background);
+	align-self: center;
+
+	cursor: pointer;
 }

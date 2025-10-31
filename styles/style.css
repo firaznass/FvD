@@ -25,10 +25,23 @@
 	--second-color-background: white; 
 	--color-accent: #f3a5aa;
 	--second-color-accent: #f7cdcf;
+	--color-light-grey: #F5F5F5;
 }
 
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 
-
+html{
+	scroll-behavior: smooth;
+}
 
 
 /****************/
@@ -37,8 +50,27 @@
 
 /* hamburger menu van codepen 2-buttons opdracht */
 
-nav{
-	background-color: var(--color-background);
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+header img{
+	width: 10em;
+	height: auto;
+
+	order: 0;
+}
+
+header button{
+	background: none;
+	border: none;
+}
+
+/* van codepen */
+header nav:first-of-type {
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -46,23 +78,122 @@ nav{
 	bottom: 0;
 
 	translate: -100% 0%;
-
 	transition: 0.3s;
 }
 
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+header nav:first-of-type.toonMenu{
+	translate: 0% 0%;
+} 
 
-	position: sticky;
-	top: 0;
+header nav:first-of-type ul{
+	list-style-type: none;
 }
 
+header nav:first-of-type button{
+	background-color: var(--color-header);
+	padding: 0.7em;
+	
+	color: var(--color-background);
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+header nav:first-of-type ul li{
+	line-height: 2em;
+}
+
+header nav:first-of-type ul li a{
+	text-decoration: none;
+	color: var(--color-header);
+	font-weight: 500;
+}
+
+header nav:last-child ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	padding: 0;
+	margin: 0;
+
+	order: 1;
+}
+
+/* Hamburger menu van codepen*/
 header > button{
 	order: -1;
+	cursor: pointer;
 }
 
-nav.ToonMenu{
-	translate: 0% 0%;
+
+
+
+/* footer */
+footer{
+	background-color: var(--color-light-grey);
+	
+	display: flex;
+	flex-direction: column;
+
+	font-family: "Sonny";
+	font-size: 0.8em;
+	color: var(--color-text);
+
+	margin-top: 2em;
 }
+
+footer h2{
+	align-self: center;
+	padding-top: 4em;
+}
+
+footer h2 img{
+	width: 15em;
+	height: auto;
+}
+
+footer p{
+	text-align: center;
+	line-height: 2em;
+	margin-bottom: 4em;
+}
+
+footer nav h3{
+	color: var(--color-header);
+	font-weight: lighter;
+	text-transform: uppercase;
+
+	justify-self: center;
+}
+
+footer nav ul{
+	justify-items: center;
+}
+
+footer nav ul li a{
+	color: var(--color-text);
+	line-height: 2.5em;
+
+	text-decoration: none;
+}
+
+footer nav:last-child{
+	background-color: var(--color-accent);
+}
+
+footer nav:last-child a svg{
+	align-self: center;
+}
+
+footer nav:last-child p{
+	color: var(--color-background);
+}
+
+footer nav:last-child img{
+	width: 35em;
+	height: auto;
+
+	align-self: center;
+}
+
+
