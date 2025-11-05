@@ -195,6 +195,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+- De form controls en links zijn meer begrijpelijk, maar moet nog sommige aanpassen en de functies beter beschrijven
+- headings zijn meer op volgorde 
+- landmarks moet ik nog de functies in de namen zetten
 
 </details>
 
@@ -274,8 +277,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Visually hidden: https://www.a11yproject.com/posts/how-to-hide-content/
+
+  2. Codepen 2-buttons hamburger menu
+
+  3. ChatGPT prompts:
+  - hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt 
+  - hoe zet ik een zwarte transparante overlay op een background image 
+
+  4. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors om te zoeken welke selectoren zijn en hoe ik ze gebruik
+
+  5. https://developer.mozilla.org/en-US/docs/Web/CSS/::after voor breadcrumbs op detail pagina + hoe ik ::after moet gebruiken
+
+  6. https://developer.mozilla.org/en-US/docs/Web/CSS/:not voor breadcrumbs op detail pagina
+
+
+
+
 
 </details>

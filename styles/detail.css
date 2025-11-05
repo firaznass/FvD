@@ -11,3 +11,174 @@
 	--second-color-accent: #f7cdcf;
 }
 
+
+/* Breadcrumbs */
+main > nav{
+	background-color: paleturquoise;
+	height: 6em;
+	padding: 0;
+	align-content: center;
+}
+
+main > nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	list-style-type: none;
+	padding: 0;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:not */
+main > nav ul li:not(:last-child)::after{
+	content: "/";
+	padding: 0.2em;
+}
+
+main > nav ul li a{
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+main > nav ul li:last-child a{
+	color: var(--color-accent);
+}
+
+
+
+/* Section 1: productviewer */
+main section:nth-of-type(1) h1{
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+/* prijs */
+main section:nth-of-type(1) p:first-of-type{
+	font-size: 0.9em;
+	color: var(--color-header);
+}
+
+/* bold lettering */
+main section:nth-of-type(1) p:nth-of-type(2){
+	font-weight: bold;
+}
+
+main section:nth-of-type(1) > img{
+	width: 91vw;
+	height: auto;
+}
+
+main section:nth-of-type(1) ul{
+	background-color: palegreen;
+	list-style-type: none;
+	padding: 0;
+}
+
+main section:nth-of-type(1) ul li a img{
+	width: 8em;
+	height: auto;
+}
+
+
+
+
+
+
+
+/* section 2: productdetails */
+main section:nth-of-type(2){
+	background-color: aquamarine;
+}
+
+main section:nth-of-type(2) h2{
+	font-size: 1em;
+	text-transform: uppercase;
+	color: var(--color-text);
+}
+
+main section:nth-of-type(2) div{
+	border: solid;
+	border-color: var(--second-color-background);
+/* 
+	display: grid;
+	grid-template-columns: 1fr 1fr; */
+}
+
+main section:nth-of-type(2) div h3, p{
+	font-size: 1em;
+	color: var(--color-text);
+}
+
+main section:nth-of-type(2) div dl{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+
+/* section 3 */
+main section:nth-of-type(3) ul{
+	margin:0;
+	padding:0;
+	list-style-type:"";
+	
+	display:flex;
+	gap:2em;
+	overflow:auto;
+	
+	padding:2em;
+	
+	scroll-snap-type:x mandatory;
+	
+	scroll-behavior:smooth;
+	
+	overscroll-behavior-x:contain;
+	
+	anchor-name: --carousel;
+
+
+	&::scroll-button(*) {
+    position: fixed;
+		
+    position-anchor: --carousel;
+		
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+     position-area: inline-end center;
+		justify-self:end;
+    content: '›' / 'Next';
+
+	/* eigen toegevoegde code */
+	background-color: var(--color-background);
+	border-radius: 10em;
+	border-color: var(--color-accent);
+	border-style: solid;
+  }
+
+  &::scroll-button(left) {
+    position-area: inline-start center;
+		justify-self:start;
+    content: '‹' / 'Previous';
+
+	/* eigen toegevoegde code */
+	background-color: var(--color-background);
+	border-radius: 10em;
+	border-color: var(--color-accent);
+	border-style: solid;
+  }
+}
+
+main section:nth-of-type(3) ul li{
+	/* flex-basis:16em; */
+	aspect-ratio:1/1;
+	
+	flex-shrink:0;
+	
+	scroll-snap-align:center;
+}
+
+

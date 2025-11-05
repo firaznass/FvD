@@ -11,14 +11,6 @@
 	--second-color-accent: #f7cdcf;
 }
 
-body{
-	margin: 0;
-}
-
-main section{
-	padding: 1em;
-}
-
 h2{
 	font-family: "Sonny";
 	font-weight: 100;
@@ -88,11 +80,23 @@ main section:nth-child(1) a:last-child svg{
 
 
 /* Section 2 */
+
+/* met chatgpt prompt: hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt */
+main section:nth-child(2) a{
+	overflow: hidden;
+	display: inline-block;
+}
+
 main section:nth-child(2) a img{
 	width: 100%;
 	height: auto;
-
 	margin-top: 1em;
+
+	transition: 0.3s ease;
+}
+
+main section:nth-child(2) a img:hover{
+	transform: scale(1.1);
 }
 
 /* Section 3 */
@@ -124,6 +128,11 @@ main section:nth-child(3) ul:first-of-type li a{
 	color: var(--color-text);
 }
 
+main section:nth-child(3) ul:first-of-type li:last-of-type a::after{
+	content: '→';
+	font-size: 1em;
+}
+
 
 
 /* carousel code van Sanne*/
@@ -143,6 +152,8 @@ main section:nth-child(3) ul:last-child{
 	scroll-behavior:smooth;
 	
 	overscroll-behavior-x:contain;
+
+	cursor: pointer;
 	
 	anchor-name: --carousel;
 
@@ -159,25 +170,25 @@ main section:nth-child(3) ul:last-child{
   &::scroll-button(right) {
      position-area: inline-end center;
 		justify-self:end;
-    content: '›' / 'Next';
+    content: '→' / 'Next';
+	padding: 1em;
 
 	/* eigen toegevoegde code */
 	background-color: var(--color-background);
 	border-radius: 10em;
-	border-color: var(--color-accent);
-	border-style: solid;
+	cursor: pointer;
   }
 
   &::scroll-button(left) {
     position-area: inline-start center;
 		justify-self:start;
-    content: '‹' / 'Previous';
+    content: '←' / 'Previous';
+	padding: 1em;
 
 	/* eigen toegevoegde code */
 	background-color: var(--color-background);
 	border-radius: 10em;
-	border-color: var(--color-accent);
-	border-style: solid;
+	cursor: pointer;
   }
 }
 
@@ -192,38 +203,42 @@ main section:nth-child(3) ul:last-child li{
 
 
 /* eigen code begint weer hier */
-main section:nth-child(3) ul:last-child li a{
+main section:nth-child(3) ul:last-child li{
 	display: grid;
-	justify-content: center;
+	grid-template-rows: 10em max-content 1fr 1fr;
 }
 
-main section:nth-child(3) ul:last-child li a h3{
+main section:nth-child(3) ul:last-child li h3{
 	text-align: center;
 	font-size: 0.7em;
-
 	color: var(--color-text);
+
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 3;
 }
 
-main section:nth-child(3) ul:last-child li a img{
+main section:nth-child(3) ul:last-child li img{
 	width: 11em;
 	height: auto;
-	order: -1;
+
+	grid-column-start:1;
+	grid-column-end:-1;
+	grid-row-start:1;
 }
 
-main section:nth-child(3) ul:last-child li a p{
-	color: black;
-	font-size: 0.9em;
-
-	justify-self: center;
+main section:nth-child(3) ul:last-child li p:first-of-type{
+	grid-row-start: 4;
 }
 
-main section:nth-child(3) ul:last-child li > p{
+main section:nth-child(3) ul:last-child li p:last-of-type{
+	grid-row-start: 2;
+	justify-self: end;
+
 	background-color: var(--color-background);
 
 	width: fit-content;
 	padding: 0.7em;
-
-	justify-self: end;
 
 	border-style: solid;
 	border-color: #6f6f6f;
@@ -231,7 +246,6 @@ main section:nth-child(3) ul:last-child li > p{
 
 /* Section 4 */
 main section:nth-child(4){
-
 	/* met chatgpt prompt: hoe zet ik een zwarte transparante overlay op een background image */
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	url("../images/partnerstore.png");
@@ -242,20 +256,25 @@ main section:nth-child(4){
 
 	height: 90vh;
 	margin: 1em;
+	align-content: center;
 }
 
 main section:nth-child(4) h2{
 	font-size: 3em;
 	text-transform: uppercase;
 	text-align: center;
+	color: white;
 }
 
 main section:nth-child(4) a{
 	text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
 	color: var(--color-background);
+
 	border-style: solid;
 	padding: 1em;
+	display: flex;
 }
 
 /* Section 5 */
@@ -275,7 +294,7 @@ main section:nth-child(5) form label{
 	display: flex;
 	flex-direction: column;
 
-	font-size: 0; /* label tekst verbergen */
+	font-size: 0; 
 }
 
 main section:nth-child(5) form label input[type="text"], input[type="email"]{

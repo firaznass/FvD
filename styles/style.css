@@ -41,14 +41,21 @@
 
 html{
 	scroll-behavior: smooth;
+	font-family: "Sonny";
+}
+
+body{
+	margin: 0;
+}
+
+main section{
+	padding: 1em;
 }
 
 
 /****************/
 /* JOUW STYLING */
 /****************/
-
-/* hamburger menu van codepen 2-buttons opdracht */
 
 header{
 	display: flex;
@@ -69,7 +76,7 @@ header button{
 	border: none;
 }
 
-/* van codepen */
+/* hamburger menu van codepen 2-buttons opdracht */
 header nav:first-of-type {
 	position: fixed;
 	left: 0;
@@ -98,6 +105,11 @@ header nav:first-of-type button{
 	font-size: 1em;
 }
 
+header nav:first-of-type button::after{
+	content: '←';
+	font-size: 1.5em;
+}
+
 header nav:first-of-type ul li{
 	line-height: 2em;
 }
@@ -119,10 +131,52 @@ header nav:last-child ul{
 	order: 1;
 }
 
-/* Hamburger menu van codepen*/
 header > button{
 	order: -1;
 	cursor: pointer;
+}
+
+/* Header 38em */
+@media (min-width:38em){
+	header > button{
+		display: none;
+	}
+
+	header nav:first-of-type{
+		position: static;
+		translate: unset;
+		padding: 0;
+
+		background: none;
+	}
+
+	header nav:first-of-type button{
+		display: none;
+	}
+
+	header nav:first-of-type ul{
+		display: flex;
+		gap: 1em;
+	}
+
+	header nav:first-of-type ul li a{
+		flex-direction: column;
+		border: none;
+
+		color: var(--color-accent);
+		text-transform: uppercase;
+	}
+
+	header nav:first-of-type ul li a:last-of-type{
+		flex-direction: column;
+	}
+}
+
+/* Header 57em */
+@media (min-width:57em){
+	/* header > a:last-of-type, nav a {
+    flex-direction:row;
+  } */
 }
 
 
@@ -162,12 +216,12 @@ footer nav h3{
 	color: var(--color-header);
 	font-weight: lighter;
 	text-transform: uppercase;
-
-	justify-self: center;
+	text-align: center;
 }
 
 footer nav ul{
 	justify-items: center;
+	padding: 0;
 }
 
 footer nav ul li a{
@@ -177,23 +231,23 @@ footer nav ul li a{
 	text-decoration: none;
 }
 
-footer nav:last-child{
+footer nav:last-of-type{
 	background-color: var(--color-accent);
 }
 
-footer nav:last-child a svg{
-	align-self: center;
+footer nav:last-of-type a svg{
+	fill: white;
 }
 
-footer nav:last-child p{
+footer nav:last-of-type p{
 	color: var(--color-background);
 }
 
-footer nav:last-child img{
+footer nav:last-of-type img{
 	width: 35em;
 	height: auto;
-
-	align-self: center;
 }
+
+
 
 
