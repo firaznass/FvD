@@ -279,7 +279,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. Visually hidden: https://www.a11yproject.com/posts/how-to-hide-content/
 
-  2. Codepen 2-buttons hamburger menu
+  2. Codepen: 2-buttons hamburger menu en productviewer
 
   3. ChatGPT prompts:
   - hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt 
@@ -290,6 +290,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. https://developer.mozilla.org/en-US/docs/Web/CSS/::after voor breadcrumbs op detail pagina + hoe ik ::after moet gebruiken
 
   6. https://developer.mozilla.org/en-US/docs/Web/CSS/:not voor breadcrumbs op detail pagina
+
+  7. https://www.svgrepo.com/ voor svg's
 
 
 
