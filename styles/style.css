@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: "Sonny";
-	src: url(/fonts/Sonny.woff2);
+	src: url(../fonts/Sonny.woff2);
 }
 
 /*********************/
@@ -80,12 +80,13 @@ header button{
 header nav:first-of-type {
 	position: fixed;
 	left: 0;
-	right: 0;
 	top: 0;
 	bottom: 0;
 
 	translate: -100% 0%;
 	transition: 0.3s;
+
+	background-color: white;
 }
 
 header nav:first-of-type.toonMenu{
@@ -136,8 +137,8 @@ header > button{
 	cursor: pointer;
 }
 
-/* Header 38em */
-@media (min-width:38em){
+/* Header desktop view */
+@media (min-width:57em){
 	header > button{
 		display: none;
 	}
@@ -170,13 +171,6 @@ header > button{
 	header nav:first-of-type ul li a:last-of-type{
 		flex-direction: column;
 	}
-}
-
-/* Header 57em */
-@media (min-width:57em){
-	/* header > a:last-of-type, nav a {
-    flex-direction:row;
-  } */
 }
 
 
@@ -248,6 +242,12 @@ footer nav:last-of-type img{
 	height: auto;
 }
 
+/* desktop footer */
+@media (min-width:57em){
+	footer nav{
+		flex-direction: row;
+	}
+}
 
 
 

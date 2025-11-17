@@ -15,7 +15,7 @@
 
 <body>
 	<header>
-		<img src="/images/logo.png" alt="Sonny Angel Benelux logo" />
+		<img src="images/logo.png" alt="Sonny Angel Benelux logo" />
 
 		<!-- hamburger menu van codepen opdracht -->
 		<button>
@@ -29,12 +29,12 @@
 		<nav>
 			<button aria-hidden="true">sonny angel benelux</button>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Alle Producten</a></li>
-				<li><a href="#">Limited Editions</a></li>
-				<li><a href="#">Nieuw!</a></li>
-				<li><a href="#">Over</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="">Alle Producten</a></li>
+				<li><a href="">Limited Editions</a></li>
+				<li><a href="">Nieuw!</a></li>
+				<li><a href="">Over</a></li>
+				<li><a href="">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -57,7 +57,7 @@
 					</button>
 				</li>
 				<li>
-					<a href="#">
+					<a href="">
 						<svg width="25px" height="25px" viewBox="0 0 32 32" version="1.1"
 							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<g id="icomoon-ignore"></g>
@@ -82,72 +82,111 @@
 			</ul>
 		</nav>
 
-		<!-- section 1: product viewer -->
-		<section>
-			<h1>Smiski Strap serie 1</h1>
-			<p>€ 6,50 (inclusief BTW)</p>
 
-			<p>
+		<section>
+			<!-- section 1: product description -->
+			<section>
+				<h1>Smiski Strap serie 1</h1>
+				<p>€ 6,50 (inclusief BTW)</p>
+
+				<p>
 				De Smiski Strap Accessoires Serie 1: vier 10 jaar Smiski met onze
 				betoverende nieuwe accessoires!
-			</p>
+				</p>
 
-			<p>
+				<p>
 				Voeg een vleugje charme toe aan je dagelijkse leven met de Smiski
 				Strap Accessoires Serie 1. Deze schattige minifiguren zijn verpakt in
 				unieke Smiski capusles, klaar om een glimlach op je gezicht te
 				toveren.
-			</p>
+				</p>
 
-			<p>Waarom je ze geweldig zult vinden:</p>
-			<p>
+				<p>Waarom je ze geweldig zult vinden:</p>
+				<p>
 				Glow in the Dark-plezier: Zowel het Smiski-figuurtje als de
 				bijbehorende capsule zijn gemaakt van speciaal fosforescerend
 				materiaal, dat overdag licht absorbeert en zachtjes oplicht in het
 				donker.
-			</p>
-			<p>
+				</p>
+				<p>
 				Collectibles: Ontdek 6 standaardfiguurtjes en 1 mysterieus secret
 				figuurtje, allemaal geïnspireerd op de originele Smiski Serie 1.
-			</p>
-			<p>Draagbaar: Bevestig ze aan je telefoon, tas, rugzak of sleutels</p>
-			<p>
+				</p>
+				<p>Draagbaar: Bevestig ze aan je telefoon, tas, rugzak of sleutels</p>
+				<p>
 				Unieke persoonlijkheden: Met favorieten van fans zoals Smiski Peeking,
 				Smiski Hugging Knees en Smiski Lounging, heeft elk figuurtje zijn
 				eigen kenmerkende pose en karakter.
-			</p>
+				</p>
 
-			<p>Koop vandaag nog jouw Smiski Strap Serie 1!</p>
+				<p>Koop vandaag nog jouw Smiski Strap Serie 1!</p>
+			</section>
 
-			<img src="images/smiski-strap-serie.jpg" alt="Smiski Strap serie 1" />
-			<ul>
-				<li>
-					<a href="">
-						<img src="images/smiski-productviewer-3.jpg" alt="Smiski Strap Serie 1 Accessoires" /></a>
-				</li>
-				<li>
-					<a href=""><img src="images/smiski-productviewer-2.jpg" alt="#" /></a>
-				</li>
-				<li>
-					<a href=""><img src="images/smiski-productviewer-1.jpg" alt="#" /></a>
-				</li>
-				<!-- <li><a href="#"><img src="#" alt="#"></a></li> -->
-			</ul>
+			<!-- section 2: productviewer -->
+			<!-- code van codepen opdracht -->
+			<section>
+				<h2 class="visually-hidden">productviewer</h2>
+				<ul>
+					<li id="smiski1"><img src="images/smiski-productviewer-1.jpg" alt=""></li>
+					<li id="smiski2"><img src="images/smiski-productviewer-2.jpg" alt=""></li>
+					<li id="smiski3"><img src="images/smiski-productviewer-3.jpg" alt=""></li>
+				</ul>
 
+				<nav>
+					<a href="#smiski1"><img src="images/smiski-productviewer-1.jpg" alt=""></a>
+					<a href="#smiski2"><img src="images/smiski-productviewer-2.jpg" alt=""></a>
+					<a href="#smiski3"><img src="images/smiski-productviewer-3.jpg" alt=""></a>
+				</nav>
+			</section>
+		</section>
+
+		<!-- section 2: form aantal en cart-->
+		<section>
+			<h2 class="visually-hidden">Aantal producten en toevoegen aan winkelwagen</h2>
 			<form>
 				<label>
 					Aantal
-					<input type="number"/>
+					<input type="number" min="1" value="1"/>
 				</label>
 
-				<label>
-					In winkelwagen
-					<input type="submit" value="In winkelwagen"/>
-				</label>
+				<button type="submit">In winkelwagen</button>
 			</form>
 		</section>
 
-		<!-- section 2 -->
+		<!-- section 3: delen button -->
+		<section>
+			<h2>Delen</h2>
+			<ul>
+				<li>
+					<a href="">
+					<svg width="15px" height="15px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+						<title>facebook [#176]</title>
+						<desc>Created with Sketch.</desc>
+						<defs></defs>
+						<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+							<g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)">
+								<g id="icons" transform="translate(56.000000, 160.000000)">
+									<path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"></path>
+								</g>
+							</g>
+						</g>
+					</svg>	
+					</a>
+				</li>
+
+				<li>
+					<a href="">
+						<svg fill="#000000" width="15px" height="15px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1920 311.856c-70.701 33.769-146.598 56.47-226.221 66.86 81.317-52.517 143.774-135.529 173.252-234.691-76.236 48.678-160.716 84.028-250.391 103.002-71.718-82.56-174.268-134.06-287.435-134.06-217.75 0-394.165 189.966-394.165 424.206 0 33.318 3.614 65.619 10.165 96.678C617.9 616.119 327.304 447.385 133.045 190.67c-33.77 62.57-53.309 135.53-53.309 213.233 0 147.162 91.031 276.818 196.744 353.054-64.602-2.26-157.101-21.46-157.101-53.309v5.648c0 205.327 114.41 376.658 294.55 415.849-32.978 9.487-78.38 14.795-114.409 14.795-25.412 0-55.454-2.71-79.624-7.793 50.26 168.509 193.13 291.163 365.478 294.777-134.852 113.506-306.07 181.383-490.616 181.383-31.85 0-64.038-2.033-94.758-5.873 174.494 120.17 381.176 190.532 603.67 190.532 724.97 0 1121.055-646.136 1121.055-1206.55 0-18.41-.452-36.932-1.356-55.116 77.026-59.746 143.887-134.4 196.631-219.444" fill-rule="evenodd"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</section>
+		
+
+		<!-- section 4: productdetails -->
 		<section>
 			<h2>Productdetails</h2>
 
@@ -158,7 +197,9 @@
 
 					<dt>Referentie</dt>
 					<dd>SASM66441</dd>
+				</dl>
 
+				<dl>
 					<dt>Material</dt>
 					<dd>PVC, Acryl, Nylon, Zinc Alloy, Iron, Stainless Steel</dd>
 	
@@ -171,34 +212,37 @@
 			</div>
 		</section>
 
-		<!-- section 3 -->
+		<!-- section 5: carousel -->
 		<section>
 			<h2>16 andere producten in dezelfde categorie:</h2>
 
 			<ul>
 				<li>
-					<a href="#">
-						<h3>Smiski</h3>
-						<img src="#" alt="#">
-					</a>
+					<h3>Smiski</h3>
+					<img src="images/smiski1_carousel.jpg" alt="">
+					<button>cart</button>
+					<button>zoek</button>
+					<button>link</button>
 					<p>Smiski Touch Light</p>
 					<p>€39,95</p>
 				</li>
 
 				<li>
-					<a href="#">
-						<h3>Smiski</h3>
-						<img src="#" alt="#">
-					</a>
+					<h3>Smiski</h3>
+					<img src="images/smiski1_carousel.jpg" alt="">
+					<button>cart</button>
+					<button>zoek</button>
+					<button>link</button>
 					<p>Smiski Touch Light</p>
 					<p>€39,95</p>
 				</li>
 
 				<li>
-					<a href="#">
-						<h3>Smiski</h3>
-						<img src="#" alt="#">
-					</a>
+					<h3>Smiski</h3>
+					<img src="images/smiski1_carousel.jpg" alt="">
+					<button>cart</button>
+					<button>zoek</button>
+					<button>link</button>
 					<p>Smiski Touch Light</p>
 					<p>€39,95</p>
 				</li>
@@ -207,38 +251,70 @@
 	</main>
 
 	<footer>
-		<h2>Sonny Angel</h2>
-		<p>
-			Sonny Angel Benelux is de officiële webwinkel voor Sonny Angel in de
-			Benelux, Duitsland en Oostenrijk. Ontdek hier onze ruime collectie Sonny
-			Angel, Smiski, Gee en Fancy Pets!
-		</p>
+		<h2><img src="images/footer_logo.png" alt="Sonny Angels"></h2>
+		<p>Sonny Angel Benelux is de officiële webwinkel voor Sonny Angel in de Benelux, Duitsland en Oostenrijk. Ontdek
+			hier onze ruime collectie Sonny Angel, Smiski, Gee en Fancy Pets!</p>
 
 		<nav>
 			<h3>Over ons</h3>
 			<ul>
-				<li><a href="">Over Sonny Angel</a></li>
-				<li><a href="">Smiski</a></li>
-				<li><a href="">Over Hippers</a></li>
-				<li><a href="">Store Finder</a></li>
-				<li><a href="">Algemene Voorwaarden</a></li>
-				<li><a href="">Privacy</a></li>
+				<li><a href="#">Over Sonny Angel</a></li>
+				<li><a href="#">Smiski</a></li>
+				<li><a href="#">Over Hippers</a></li>
+				<li><a href="#">Store Finder</a></li>
+				<li><a href="#">Algemene Voorwaarden</a></li>
+				<li><a href="#">Privacy</a></li>
 			</ul>
 		</nav>
 
 		<nav>
 			<h3>Klantenservice</h3>
 			<ul>
-				<li><a href="">FAQ's</a></li>
-				<li><a href="">Mijn Account</a></li>
-				<li><a href="">Contacteer Ons</a></li>
-				<li><a href="">Betaling</a></li>
-				<li><a href="">Levering</a></li>
-				<li><a href="">Bestelstatus</a></li>
+				<li><a href="#">FAQ's</a></li>
+				<li><a href="#">Mijn Account</a></li>
+				<li><a href="#">Contacteer Ons</a></li>
+				<li><a href="#">Betaling</a></li>
+				<li><a href="#">Levering</a></li>
+				<li><a href="#">Bestelstatus</a></li>
 			</ul>
 		</nav>
 
-		<p>Copyright © Sonny Angel Benelux 2024</p>
+		<nav>
+			<a href="">
+				<svg width="30px" height="30px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+					<title>facebook [#176]</title>
+					<desc>Created with Sketch.</desc>
+					<defs></defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+						<g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)">
+							<g id="icons" transform="translate(56.000000, 160.000000)">
+								<path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</a>
+
+			<a href="">
+				<svg width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+					<title>instagram [#167]</title>
+					<desc>Created with Sketch.</desc>
+					<defs></defs>
+					<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+						<g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+							<g id="icons" transform="translate(56.000000, 160.000000)">
+								<path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</a>
+
+			<p>Copyright © Sonny Angel Benelux 2024</p>
+			<img src="images/footer_payments.png" alt="">
+		</nav>
 	</footer>
 
 	<script defer src="scripts/script.js"></script>

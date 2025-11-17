@@ -67,7 +67,14 @@ main section:nth-child(1) a:first-of-type{
 
 	text-decoration: none;
 	font-size: 0.6em;
-	padding: 1em;
+	padding: 1.5em;
+}
+
+
+main section:nth-child(1) a:first-of-type::before{
+	content: '+';
+	margin-right: 1em;
+	font-size: 1em;
 }
 
 main section:nth-child(1) a:last-child{
@@ -80,14 +87,13 @@ main section:nth-child(1) a:last-child svg{
 
 
 /* Section 2 */
-
 /* met chatgpt prompt: hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt */
 main section:nth-child(2) a{
 	overflow: hidden;
 	display: inline-block;
 }
 
-main section:nth-child(2) a img{
+main section:nth-child(2) img{
 	width: 100%;
 	height: auto;
 	margin-top: 1em;
@@ -95,7 +101,7 @@ main section:nth-child(2) a img{
 	transition: 0.3s ease;
 }
 
-main section:nth-child(2) a img:hover{
+main section:nth-child(2) img:hover{
 	transform: scale(1.1);
 }
 
@@ -274,7 +280,13 @@ main section:nth-child(4) a{
 
 	border-style: solid;
 	padding: 1em;
-	display: flex;
+	display: block;
+}
+
+main section:nth-child(4) a::before{
+	content: '+';
+	margin-right: 0.5em;
+	font-size: 1.2em;
 }
 
 /* Section 5 */
@@ -282,12 +294,15 @@ main section:nth-child(5) h2{
 	text-align: center;
 	font-size: 1.5em;
 
-	letter-spacing: normal;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 
 main section:nth-child(5) form{
 	display: flex;
 	flex-direction: column;
+
+	margin: 0.5em
 }
 
 main section:nth-child(5) form label{
@@ -308,7 +323,7 @@ main section:nth-child(5) form label input[type="text"], input[type="email"]{
 
 main section:nth-child(5) form label input[type="submit"]{
 	background-color: var(--color-accent);
-	padding: 1em;
+	padding: 1em 2.5em 1em 2.5em;
 	margin-top: 3em;
 	width: max-content;
 
@@ -317,4 +332,83 @@ main section:nth-child(5) form label input[type="submit"]{
 	align-self: center;
 
 	cursor: pointer;
+}
+
+
+/* tablet view */
+@media (min-width:38em){
+	main section:nth-child(1) p{
+		font-size: 1em;
+	}
+
+	main section:nth-child(4) a{
+		font-size: 1.2em;
+	}
+}
+
+/* deskrop view */
+@media (min-width:57em){
+	main section:nth-child(1){
+		background-image: url(/images/dektop-bg.png);
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 13em max-content max-content;
+		row-gap: 1em;
+	}
+
+
+	main section:nth-child(1) h1{
+		justify-self: center;
+		align-self: self-end;
+	}
+
+	main section:nth-child(1) h1 img{
+		width: 13em;
+	}
+
+
+	main section:nth-child(1) p{
+		grid-row-start: 2;
+		justify-self: center;
+		margin: 0;
+	}
+
+	main section:nth-child(1) a:first-of-type{
+		grid-row-start: 3;
+		justify-self: center;
+		margin-top: 2em;	
+	}
+
+	main section:nth-child(1) a:last-of-type{
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
+
+	/* section 2 */
+	main section:nth-child(2){
+		display: flex;
+		justify-content: space-between;
+	}
+
+	main section:nth-child(2) img{
+		width: 28em;
+	}
+
+	/* section 3 */
+	main section:nth-child(3) ul:first-of-type{
+		display: flex;
+		justify-content: space-between;
+		gap: 2em;
+	}
+
+	/* section 4 */
+	main section:nth-child(4){
+		height: 60vh;
+	}
+
+	main section:nth-child(4) a{
+		justify-self: center;
+	}
+
 }

@@ -14,7 +14,6 @@
 
 /* Breadcrumbs */
 main > nav{
-	background-color: paleturquoise;
 	height: 6em;
 	padding: 0;
 	align-content: center;
@@ -35,90 +34,225 @@ main > nav ul{
 main > nav ul li:not(:last-child)::after{
 	content: "/";
 	padding: 0.2em;
+	font-size: 0.8em;
 }
 
 main > nav ul li a{
 	text-decoration: none;
 	color: var(--color-text);
+	font-size: 0.8em;
 }
 
 main > nav ul li:last-child a{
 	color: var(--color-accent);
 }
 
+/* section 1 als container */
+main section:nth-of-type(1){
+	display: flex;
+	flex-direction: column;
+}
+
+main section:nth-of-type(1) section:nth-of-type(1){
+	order: 2;
+	padding: 0;
+}
+
+main section:nth-of-type(1) section:nth-of-type(2){
+	order: 1;
+	padding: 0;
+}
 
 
-/* Section 1: productviewer */
-main section:nth-of-type(1) h1{
+/* Section 1-1: product description */
+main section:nth-of-type(1) section:nth-of-type(1) h1{
 	font-size: 1.2em;
 	font-weight: normal;
 }
 
 /* prijs */
-main section:nth-of-type(1) p:first-of-type{
+main section:nth-of-type(1) section:nth-of-type(1) p:first-of-type{
 	font-size: 0.9em;
 	color: var(--color-header);
 }
 
 /* bold lettering */
-main section:nth-of-type(1) p:nth-of-type(2){
+main section:nth-of-type(1) section:nth-of-type(1) p:nth-of-type(2){
 	font-weight: bold;
 }
 
-main section:nth-of-type(1) > img{
+main section:nth-of-type(1) section:nth-of-type(1) > img{
 	width: 91vw;
 	height: auto;
 }
 
-main section:nth-of-type(1) ul{
-	background-color: palegreen;
+main section:nth-of-type(1) section:nth-of-type(1) ul{
 	list-style-type: none;
 	padding: 0;
 }
 
-main section:nth-of-type(1) ul li a img{
+main section:nth-of-type(1) section:nth-of-type(1) ul li a img{
 	width: 8em;
 	height: auto;
 }
 
 
 
+/* section 1-2: productviewer */
+main section:nth-of-type(1) section:nth-of-type(2) ul{
+	display: flex;
+	overflow: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
 
-
-
-
-/* section 2: productdetails */
-main section:nth-of-type(2){
-	background-color: aquamarine;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-main section:nth-of-type(2) h2{
+main section:nth-of-type(1) section:nth-of-type(2) li{
+	flex-basis: 100%;
+	flex-shrink: 0;
+	scroll-snap-align: center;
+}
+
+main section:nth-of-type(1) section:nth-of-type(2) nav{
+	display: flex;
+	gap: min(2vw, 1.5em);
+	scroll-target-group: auto;
+}
+
+main section:nth-of-type(1) section:nth-of-type(2) a{
+	filter: grayscale(1);
+	transition: 1;
+}
+
+main section:nth-of-type(1) section:nth-of-type(2) a:target-current{
+	filter: grayscale(0);
+	cursor: default;
+}
+
+main section:nth-of-type(1) section:nth-of-type(2) img{
+	max-width: 100%;
+	display: block;
+}
+
+/* section 2: form aantal en winkelwagen */
+section:nth-of-type(2) form{
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 0;
+}
+
+section:nth-of-type(2) form label{
+	display: flex;
+	flex-direction: column;
+}
+
+section:nth-of-type(2) form input{
+	width: 5em;
+	font-size: 1.5em;
+	width: 2em;
+}
+
+section:nth-of-type(2) form button{
+	background-color: var(--color-header);
+	color: var(--color-background);
+	padding: 1em;
+	border: none;
+	border-radius: 100em;
+
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 15em;
+}
+
+/* section 3: delen */
+section:nth-of-type(3){
+	display: flex;
+}
+
+section:nth-of-type(3) h2{
+	font-size: 1em;
+	margin-right: 1em;
+}
+
+section:nth-of-type(3) ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	gap: 1em;
+}
+
+section:nth-of-type(3) ul li{
+	align-self: center;
+	border-style: solid;
+	width: 2em;
+	height: 2em;
+	padding: 0.5em;
+	border-radius: 50%;
+}
+
+section:nth-of-type(3) ul li a{
+
+}
+
+/* section 4: productdetails */
+section:nth-of-type(4) h2{
 	font-size: 1em;
 	text-transform: uppercase;
-	color: var(--color-text);
 }
 
-main section:nth-of-type(2) div{
-	border: solid;
-	border-color: var(--second-color-background);
-/* 
+section:nth-of-type(4) div{
+	border-style: solid;
+	border-color: var(--color-text);
+
+	padding: 1.5em;
+}
+
+/* merk & referentie */
+section:nth-of-type(4) div dl:nth-of-type(1){
 	display: grid;
-	grid-template-columns: 1fr 1fr; */
+	grid-template-columns: max-content max-content;
+	row-gap: 1em;
+	column-gap: 0.5em;
 }
 
-main section:nth-of-type(2) div h3, p{
-	font-size: 1em;
-	color: var(--color-text);
+section:nth-of-type(4) div dl:nth-of-type(1) dt{
+	font-weight: bold;
 }
 
-main section:nth-of-type(2) div dl{
+section:nth-of-type(4) div dl:nth-of-type(1) dd{
+	margin: 0;
+}
+
+/* material, leeftijdsgroep & afmetingen */
+section:nth-of-type(4) div dl:nth-of-type(2){
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 1em;
 }
 
-/* section 3 */
-main section:nth-of-type(3) ul{
+section:nth-of-type(4) div dl:nth-of-type(2) dt{
+	background-color: lightgray;
+	padding: 1em;
+}
+
+section:nth-of-type(4) div dl:nth-of-type(2) dd{
+	margin: 0;
+}
+
+section:nth-of-type(4) div dl:nth-of-type(2) dt, dd{
+	font-size: 0.8em;
+}
+
+
+
+/* section 5: carousel (code van sanne) */
+main section:nth-of-type(5) ul{
 	margin:0;
 	padding:0;
 	list-style-type:"";
@@ -172,13 +306,109 @@ main section:nth-of-type(3) ul{
   }
 }
 
-main section:nth-of-type(3) ul li{
+/* button code van sanne */
+main section:nth-of-type(5) ul li{
 	/* flex-basis:16em; */
 	aspect-ratio:1/1;
-	
 	flex-shrink:0;
-	
 	scroll-snap-align:center;
+
+	position:relative;
+	
+	background-color:gold;
+	
+	width:16em;
+	
+	
+	/* display:flex; */
+	flex-direction:column;
+	
+	overflow:clip;
+}
+
+main section:nth-of-type(5) ul li{
+	display: grid;
+	grid-template-rows: 10em max-content 1fr 1fr;
+}
+
+main section:nth-of-type(5) ul li h3{
+	text-align: center;
+	font-size: 0.7em;
+	color: var(--color-text);
+
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row-start: 3;
+}
+
+main section:nth-of-type(5) ul li img{
+	grid-column-start:1;
+	grid-column-end:-1;
+	grid-row-start:1;
+}
+
+main section:nth-of-type(5) ul li p:first-of-type{
+	grid-row-start: 5;
+	/* background-color: purple; */
+}
+
+main section:nth-of-type(5) ul li p:last-of-type{
+	grid-row-start: 2;
+	justify-self: end;
+
+	background-color: var(--color-background);
+
+	width: fit-content;
+	padding: 0.7em;
+
+	border-style: solid;
+	border-color: #6f6f6f;
+}
+
+
+main section:nth-of-type(5) ul li img{
+	display:block;
+	width:100%;
+	
+	order:-1;
+}
+
+main section:nth-of-type(5) ul li button{
+	display:block;
+	width:3em;
+	height:3em;
+	margin:0;
+	padding:0;
+	border-radius:50%;
+	border:none;
+	
+	position:absolute;
+	
+	translate:4em;
+	transition:.5s;
+}
+
+main section:nth-of-type(5) ul li button:nth-of-type(1){
+	top:.5em;
+	right:.5em;
+}
+
+main section:nth-of-type(5) ul li button:nth-of-type(2){
+	top:4em;
+	right:.5em;
+	
+	transition-delay:.2s;
+}
+
+main section:nth-of-type(5) ul li button:nth-of-type(3){
+	top:7.5em;
+	right:.5em;
+	
+	transition-delay:.4s;
+}
+
+main section:nth-of-type(5) ul li:hover button, li:focus-within button{
+	translate:0;
 }
 
 
