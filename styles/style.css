@@ -19,12 +19,11 @@
 /*********************/
 
 :root {
-	--color-text: #6f6f6f;
-	--color-header: #2e2e2e;
-	--color-background: #ffffff;
-	--second-color-background: white; 
-	--color-accent: #f3a5aa;
-	--second-color-accent: #f7cdcf;
+	--color-dark-grey: #6f6f6f;
+	--color-black: #2e2e2e;
+	--color-white: white; 
+	--color-dark-pink: #f3a5aa;
+	--color-light-pink: #f7cdcf;
 	--color-light-grey: #F5F5F5;
 }
 
@@ -86,7 +85,7 @@ header nav:first-of-type {
 	translate: -100% 0%;
 	transition: 0.3s;
 
-	background-color: white;
+	background-color: var(--color-white);
 }
 
 header nav:first-of-type.toonMenu{
@@ -98,10 +97,10 @@ header nav:first-of-type ul{
 }
 
 header nav:first-of-type button{
-	background-color: var(--color-header);
+	background-color: var(--color-black);
 	padding: 0.7em;
 	
-	color: var(--color-background);
+	color: var(--color-white);
 	text-transform: uppercase;
 	font-size: 1em;
 }
@@ -109,6 +108,7 @@ header nav:first-of-type button{
 header nav:first-of-type button::after{
 	content: '←';
 	font-size: 1.5em;
+	padding-left: 1em;
 }
 
 header nav:first-of-type ul li{
@@ -117,7 +117,7 @@ header nav:first-of-type ul li{
 
 header nav:first-of-type ul li a{
 	text-decoration: none;
-	color: var(--color-header);
+	color: var(--color-black);
 	font-weight: 500;
 }
 
@@ -164,7 +164,7 @@ header > button{
 		flex-direction: column;
 		border: none;
 
-		color: var(--color-accent);
+		color: var(--color-dark-pink);
 		text-transform: uppercase;
 	}
 
@@ -172,8 +172,6 @@ header > button{
 		flex-direction: column;
 	}
 }
-
-
 
 
 /* footer */
@@ -185,29 +183,28 @@ footer{
 
 	font-family: "Sonny";
 	font-size: 0.8em;
-	color: var(--color-text);
+	color: var(--color-dark-grey);
 
 	margin-top: 2em;
 }
 
-footer h2{
+footer section:first-of-type{
 	align-self: center;
 	padding-top: 4em;
 }
 
-footer h2 img{
+footer section:first-of-type h2 img{
 	width: 15em;
 	height: auto;
 }
 
-footer p{
+footer section:first-of-type p{
 	text-align: center;
 	line-height: 2em;
 	margin-bottom: 4em;
 }
 
 footer nav h3{
-	color: var(--color-header);
 	font-weight: lighter;
 	text-transform: uppercase;
 	text-align: center;
@@ -219,33 +216,60 @@ footer nav ul{
 }
 
 footer nav ul li a{
-	color: var(--color-text);
+	color: var(--color-dark-grey);
 	line-height: 2.5em;
 
 	text-decoration: none;
 }
 
-footer nav:last-of-type{
-	background-color: var(--color-accent);
+footer section:last-of-type{
+	background-color: var(--color-dark-pink);
 }
 
-footer nav:last-of-type a svg{
+footer section:last-of-type a{
+	align-items: center;
+}
+
+footer section:last-of-type a svg{
 	fill: white;
 }
 
-footer nav:last-of-type p{
-	color: var(--color-background);
+footer section:last-of-type p{
+	color: var(--color-white);
 }
 
-footer nav:last-of-type img{
-	width: 35em;
+footer section:last-of-type img{
+	width: 100%;
 	height: auto;
 }
 
 /* desktop footer */
 @media (min-width:57em){
-	footer nav{
-		flex-direction: row;
+	footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	footer section h2{
+		justify-self: center;
+	}
+
+	footer section:last-of-type{
+		grid-column-start: 1;
+		grid-column-end: -1;
+
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer section:last-of-type a{
+		justify-self: flex-start;
+	}
+
+	footer section:last-of-type img{
+		height: 2em;
+		width: max-content;
 	}
 }
 

@@ -3,12 +3,12 @@
 /*********************/
 
 :root {
-	--color-text: #6f6f6f;
-	--color-header: #2e2e2e;
-	--color-background: #ffffff;
-	--second-color-background: white; 
-	--color-accent: #f3a5aa;
-	--second-color-accent: #f7cdcf;
+	--color-dark-grey: #6f6f6f;
+	--color-black: #2e2e2e;
+	--color-white: white; 
+	--color-dark-pink: #f3a5aa;
+	--color-light-pink: #f7cdcf;
+	--color-light-grey: #F5F5F5;
 }
 
 
@@ -17,6 +17,7 @@ main > nav{
 	height: 6em;
 	padding: 0;
 	align-content: center;
+	background-color: var(--color-light-grey);
 }
 
 main > nav ul{
@@ -31,20 +32,22 @@ main > nav ul{
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/::after */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:not */
-main > nav ul li:not(:last-child)::after{
+main > nav ul li:not(:last-of-type)::after{
 	content: "/";
 	padding: 0.2em;
 	font-size: 0.8em;
+	color: var(--color-dark-grey);
+
 }
 
 main > nav ul li a{
 	text-decoration: none;
-	color: var(--color-text);
+	color: var(--color-dark-grey);
 	font-size: 0.8em;
 }
 
 main > nav ul li:last-child a{
-	color: var(--color-accent);
+	color: var(--color-dark-pink);
 }
 
 /* section 1 als container */
@@ -70,10 +73,13 @@ main section:nth-of-type(1) section:nth-of-type(1) h1{
 	font-weight: normal;
 }
 
+main section:nth-of-type(1) section:nth-of-type(1) p:not(:first-of-type){
+	color: var(--color-dark-grey);
+}
+
 /* prijs */
 main section:nth-of-type(1) section:nth-of-type(1) p:first-of-type{
 	font-size: 0.9em;
-	color: var(--color-header);
 }
 
 /* bold lettering */
@@ -98,7 +104,7 @@ main section:nth-of-type(1) section:nth-of-type(1) ul li a img{
 
 
 
-/* section 1-2: productviewer */
+/* section 1-2: productviewer code van codepen */
 main section:nth-of-type(1) section:nth-of-type(2) ul{
 	display: flex;
 	overflow: hidden;
@@ -148,6 +154,8 @@ section:nth-of-type(2) form{
 section:nth-of-type(2) form label{
 	display: flex;
 	flex-direction: column;
+	font-style: italic;
+	color: var(--color-dark-grey);
 }
 
 section:nth-of-type(2) form input{
@@ -157,8 +165,8 @@ section:nth-of-type(2) form input{
 }
 
 section:nth-of-type(2) form button{
-	background-color: var(--color-header);
-	color: var(--color-background);
+	background-color: var(--color-black);
+	color: var(--color-white);
 	padding: 1em;
 	border: none;
 	border-radius: 100em;
@@ -171,11 +179,13 @@ section:nth-of-type(2) form button{
 /* section 3: delen */
 section:nth-of-type(3){
 	display: flex;
+	color: var(--color-dark-grey);
 }
 
 section:nth-of-type(3) h2{
 	font-size: 1em;
 	margin-right: 1em;
+	font-weight: lighter;
 }
 
 section:nth-of-type(3) ul{
@@ -187,6 +197,11 @@ section:nth-of-type(3) ul{
 	gap: 1em;
 }
 
+section:nth-of-type(3) ul li a svg{
+	fill: var(--color-dark-grey);
+}
+
+/* chatgpt prompt: how can i make a round circle with border-radius */
 section:nth-of-type(3) ul li{
 	align-self: center;
 	border-style: solid;
@@ -196,19 +211,16 @@ section:nth-of-type(3) ul li{
 	border-radius: 50%;
 }
 
-section:nth-of-type(3) ul li a{
-
-}
-
 /* section 4: productdetails */
 section:nth-of-type(4) h2{
 	font-size: 1em;
 	text-transform: uppercase;
+	color: var(--color-black);
 }
 
 section:nth-of-type(4) div{
 	border-style: solid;
-	border-color: var(--color-text);
+	border-color: var(--color-dark-grey);
 
 	padding: 1.5em;
 }
@@ -237,7 +249,6 @@ section:nth-of-type(4) div dl:nth-of-type(2){
 }
 
 section:nth-of-type(4) div dl:nth-of-type(2) dt{
-	background-color: lightgray;
 	padding: 1em;
 }
 
@@ -247,6 +258,10 @@ section:nth-of-type(4) div dl:nth-of-type(2) dd{
 
 section:nth-of-type(4) div dl:nth-of-type(2) dt, dd{
 	font-size: 0.8em;
+}
+
+section:nth-of-type(4) div dl:nth-of-type(2) dt:first-of-type, dl:nth-of-type(2) dt:last-of-type, dl:nth-of-type(2) dd:first-of-type, dl:nth-of-type(2) dd:last-of-type{
+	background-color: var(--color-light-grey);
 }
 
 

@@ -87,12 +87,11 @@ main section:nth-child(1) a:last-child svg{
 
 
 /* Section 2 */
-/* met chatgpt prompt: hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt */
-main section:nth-child(2) a{
-	overflow: hidden;
-	display: inline-block;
+main section:nth-child(2){
+	margin: 1em 0 1em 0;
 }
 
+/* met chatgpt prompt: hoe zoom ik in met :hover op een img maar ervoor zorgt dat het plaatje niet uitsteekt */
 main section:nth-child(2) img{
 	width: 100%;
 	height: auto;
@@ -102,7 +101,7 @@ main section:nth-child(2) img{
 }
 
 main section:nth-child(2) img:hover{
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 /* Section 3 */
@@ -324,7 +323,7 @@ main section:nth-child(5) form label input[type="text"], input[type="email"]{
 main section:nth-child(5) form label input[type="submit"]{
 	background-color: var(--color-accent);
 	padding: 1em 2.5em 1em 2.5em;
-	margin-top: 3em;
+	margin-top: 2em;
 	width: max-content;
 
 	border: none;
@@ -346,10 +345,14 @@ main section:nth-child(5) form label input[type="submit"]{
 	}
 }
 
-/* deskrop view */
+/* desktop view */
 @media (min-width:57em){
+
+	/* ChatGPT prompt: in my css i have a background color for my bg but i want to change it to a background image in @media (min-width:57em), but it doesnt show up */
 	main section:nth-child(1){
-		background-image: url(/images/dektop-bg.png);
+		background-image: url(/images/background-section1.jpeg);
+		background-size: cover;
+		background-position: right bottom;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -378,6 +381,7 @@ main section:nth-child(5) form label input[type="submit"]{
 		grid-row-start: 3;
 		justify-self: center;
 		margin-top: 2em;	
+		margin-bottom: 0;
 	}
 
 	main section:nth-child(1) a:last-of-type{
@@ -385,24 +389,21 @@ main section:nth-child(5) form label input[type="submit"]{
 		grid-row-start: 3;
 	}
 
-	/* section 2 */
+	/* section 2: images */
 	main section:nth-child(2){
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1em;
 	}
 
-	main section:nth-child(2) img{
-		width: 28em;
-	}
-
-	/* section 3 */
+	/* section 3: carousel */
 	main section:nth-child(3) ul:first-of-type{
 		display: flex;
 		justify-content: space-between;
 		gap: 2em;
 	}
 
-	/* section 4 */
+	/* section 4: partner store finder */
 	main section:nth-child(4){
 		height: 60vh;
 	}
@@ -411,4 +412,27 @@ main section:nth-child(5) form label input[type="submit"]{
 		justify-self: center;
 	}
 
+	/* section 5: form */
+	main section:nth-child(5){
+		background-image: url(/images/form-bg.jpg);
+		background-size: cover;
+		height: 90vh;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+
+		padding-right: 15em;
+		padding-top: 3em;
+	}
+
+	main section:nth-child(5) h2{
+		max-width: 19em;
+		text-align: center;
+	}
+
+	main section:nth-child(5) form label input[type="text"], input[type="email"]{
+		width: 33em;
+	}	
 }
